@@ -18,11 +18,11 @@ export const Container = styled.div<ContainerProps>`
 
     nav {
       a {
+        /* padding: 20px; */
         color: #fff;
         text-decoration: none;
         font-size: 16px;
         transition: opacity 0.2s;
-
         & + a {
           margin-left: 32px;
         }

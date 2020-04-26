@@ -9,6 +9,8 @@ jest.mock('../utils/formatValue.ts', () => ({
         return 'R$ 6.000,00';
       case 50:
         return 'R$ 50,00';
+      case -50:
+        return '- R$ 50,00';
       case 5950:
         return 'R$ 5.950,00';
       case 1500:
@@ -30,7 +32,7 @@ import App from '../App';
 const apiMock = new MockAdapter(api);
 
 const wait = (amount = 0): Promise<void> => {
-  return new Promise((resolve) => setTimeout(resolve, amount));
+  return new Promise(resolve => setTimeout(resolve, amount));
 };
 
 const actWait = async (amount = 0): Promise<void> => {
