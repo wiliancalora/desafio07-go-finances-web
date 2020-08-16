@@ -9,8 +9,6 @@ jest.mock('../utils/formatValue.ts', () => ({
         return 'R$ 6.000,00';
       case 50:
         return 'R$ 50,00';
-      case -50:
-        return '- R$ 50,00';
       case 5950:
         return 'R$ 5.950,00';
       case 1500:
